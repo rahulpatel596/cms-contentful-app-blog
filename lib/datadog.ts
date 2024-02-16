@@ -1,5 +1,4 @@
 import { datadogRum } from '@datadog/browser-rum'
-import { CONTENTSTACK_ENVIRONMENT, DATADOG_APPLICATION_ID, DATADOG_CLIENT_TOKEN, DATADOG_REPLAY, DATADOG_SAMPLE_RATE, DATADOG_SERVICE, DATADOG_SITE } from '@modules/general/constants'
 
 
 export const initializeRUM = () => {
