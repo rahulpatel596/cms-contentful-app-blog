@@ -1,11 +1,13 @@
+"use client"
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { EXAMPLE_PATH, CMS_NAME } from "@/lib/constants";
-
-export const metadata = {
-  title: `Next.js and ${CMS_NAME} Example`,
-  description: `This is a blog built with Next.js and ${CMS_NAME}.`,
-};
+import { useEffect } from 'react';
+import { initializeRUM } from '@/lib/datadog';
+// export const metadata = {
+//   title: `Next.js and ${CMS_NAME} Example`,
+//   description: `This is a blog built with Next.js and ${CMS_NAME}.`,
+// };
 
 const inter = Inter({
   variable: "--font-inter",
@@ -46,6 +48,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  useEffect(() => {
+    console.log("call >>>")
+    initializeRUM()
+
+  }, [])
   return (
     <html lang="en" className={inter.variable}>
       <body>

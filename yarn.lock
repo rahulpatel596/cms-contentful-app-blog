@@ -36,6 +36,26 @@
   resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-16.3.4.tgz#c5fc9c834dde03d4c4ee189900d304ce1888a74b"
   integrity sha512-PyVSrQa5j1hO4grgA0Ivo/taiOvW0uFN79JB5JkTG8U7DnWGI7Ap2As6zN6/E6YvDqb7w2cYRMSGSQ3qfxu8HQ==
 
+"@datadog/browser-core@5.9.0":
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/@datadog/browser-core/-/browser-core-5.9.0.tgz#15bdbdc938fc1938c9550afe0cbf4be1c5642150"
+  integrity sha512-8YSk/5Qi6XhyBEL9C/uReoYu/9Dpyh9iplCK1efmKUehWDBKOV353TbMYDDJlcY8Ha7iwA5ZoEEUKcWszRlQkA==
+
+"@datadog/browser-rum-core@5.9.0":
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/@datadog/browser-rum-core/-/browser-rum-core-5.9.0.tgz#3059de4e2a01e384074fe490a576a4a8fc45828b"
+  integrity sha512-jPXNqHBdU6UfgLKvXE9Qq5XBtPGAI/qhYrWWAFbYTABL7AipF8xP7N1QlkbuIhjiln5xC3IaPiDgdMCVQlmB6w==
+  dependencies:
+    "@datadog/browser-core" "5.9.0"
+
+"@datadog/browser-rum@^5.9.0":
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/@datadog/browser-rum/-/browser-rum-5.9.0.tgz#27d5580e8f0c2f140e44ecbe23a66f3606ca9936"
+  integrity sha512-2Izc3vLS7xBMETr5q82ahKiZK+DIsX80PnRUajiwbOTVpWsQjyvPB3uVshaYdwAXPc654AfRlFoALVDiUs4QEg==
+  dependencies:
+    "@datadog/browser-core" "5.9.0"
+    "@datadog/browser-rum-core" "5.9.0"
+
 "@discoveryjs/json-ext@^0.5.7":
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
