@@ -2,13 +2,11 @@ import { datadogRum } from '@datadog/browser-rum'
 
 
 export const initializeRUM = () => {
-
-
-    if (! datadogRum.getInternalContext()) {
+    if (!datadogRum.getInternalContext()) {
         
         datadogRum.init({
-            applicationId: process.env.DATA_DOG_APP_ID || '',
-            clientToken: process.env.DATA_DOG_CLIENT_TOKEN || '',
+            applicationId: process.env.NEXT_PUBLIC_DATADOG_APPLICATION_ID || '',
+            clientToken: process.env.NEXT_PUBLIC_DATADOG_CLIENT_TOKEN || '',
             site: 'us5.datadoghq.com',
             service: 'cms-contentful-blog',
             env: 'prod',
