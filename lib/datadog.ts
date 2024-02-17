@@ -18,6 +18,7 @@ export const initializeRUM = () => {
             trackResources: true,
             trackLongTasks: true,
             defaultPrivacyLevel: 'mask-user-input',
+            allowedTracingUrls: ["https://functionaltools.co", "https://www.functionaltools.co/"]
         });
 
         datadogRum.startSessionReplayRecording()
